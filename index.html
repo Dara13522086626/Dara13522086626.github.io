@@ -1,0 +1,46 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>校园通行码</title>
+<style type="text/css">
+body,td,th {
+	color: rgba(96,98,101,1);
+	font-size: 42px;
+}
+</style>
+</head>
+
+<body>
+<table width="960px" border="0">
+  <tbody>
+    <tr>
+      <td width="960px"><img src="成果.png" width="960px" height="1082px" alt=""/></td>
+      <td width="960px">&nbsp;</td>
+    </tr>
+    <tr>
+      <td height="210px" align="center" valign="middle"><p>人员信息：王思鉴-基础医学院</p>
+     
+       <div id="ts"></div>
+<script language="JavaScript" type="text/javascript">
+function newTs(){
+var today = new Date();
+yrNow = today.getYear();//年
+//mrNow = today.getMonth()+1;//月
+	mrNow=("0" + (today.getMonth() + 1)).slice(-2)
+//drNow = today.getDate();//日
+	drNow=("0" + today.getDate()).slice(-2)
+hrNow =("0"+ today.getHours()).slice(-2);//小时
+mnNow = ("0"+today.getMinutes()).slice(-2);//分
+scNow = ("0"+today.getSeconds()).slice(-2);//秒
+document.getElementById("ts").innerText ='入校时间： 2021-'+mrNow+'-'+drNow+' '+hrNow+':'+ mnNow+':'+scNow;
+
+}
+newTs();
+</script></td>
+      <td align="center" valign="middle">&nbsp;</td>
+    </tr>
+  </tbody>
+</table>
+</body>
+</html>
